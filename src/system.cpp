@@ -27,10 +27,11 @@ Processor& System::Cpu() {
 vector<Process>& System::Processes() {
     std::vector<int> pids = LinuxParser::Pids() ;
     vector<Process> p(pids.size());
-    for(int i = 0 ; i < pids.size() ; i++){
+    for(long unsigned int i = 0 ; i < pids.size() ; i++){
+
         p[i].updateParameters(pids.at(i));
     }
-
+    std::sort(p.begin(), p.end()) ;
     processes_ = p ;
     return processes_; 
 }

@@ -89,7 +89,7 @@ long int Process::findUpTimeValue(int pid){
         std::getline(stream,line);
         int i = 0 ;
         words.str(line);
-        while(i<22){
+        while(i<21){
             i++ ;
             words >> temp ;
         }
@@ -109,17 +109,15 @@ std::string Process::findRamValue(int pid){
     std::string result ;
     std::ifstream stream{path};
     std::istringstream words;
-
+    long ram = 0 ;
     if(stream){
         while(std::getline(stream,line)){
             words.str(line) ;
             words >> temp ;
             if(temp == "VmSize:"){
-                words >> result ;
-                result += " " ;
-                temp.clear();
-                words >> temp ;
-                result += temp ;
+                words >> ram ;
+                ram /= 1024 ;
+                result = to_string(ram) ;
             }
             temp.clear();
         }
@@ -223,5 +221,5 @@ std::string Process::findUser(int pid){
 // TODO: Overload the "less than" comparison operator for Process objects
 // REMOVE: [[maybe_unused]] once you define the function
 bool Process::operator<(Process const& a) const { 
-    return (this->CpuUtilizationValue<a.CpuUtilizationValue); 
+    return (this->CpuUtilizationValue>a.CpuUtilizationValue); 
 }
