@@ -18,7 +18,7 @@ string
 string
 -
 
-/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/process.cpp
+/home/abdo/Desktop/sys/src/process.cpp
 unistd.h
 -
 cctype
@@ -32,7 +32,7 @@ vector
 iostream
 -
 linux_parser.h
-/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/linux_parser.h
+/home/abdo/Desktop/sys/src/linux_parser.h
 process.h
-/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/process.h
+/home/abdo/Desktop/sys/src/process.h
 

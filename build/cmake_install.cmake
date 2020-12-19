@@ -1,4 +1,4 @@
-# Install script for directory: /home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated
+# Install script for directory: /home/abdo/Desktop/sys
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/abdo/Desktop/sys/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

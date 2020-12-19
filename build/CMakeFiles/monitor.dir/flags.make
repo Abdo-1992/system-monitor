@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/include
+CXX_INCLUDES = -I/home/abdo/Desktop/sys/include
 
 CXX_FLAGS = -Wall -Wextra -g -std=gnu++17
 

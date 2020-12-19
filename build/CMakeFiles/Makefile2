@@ -54,19 +54,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/715/bin/cmake
+CMAKE_COMMAND = /snap/cmake/743/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/715/bin/cmake -E rm -f
+RM = /snap/cmake/743/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated
+CMAKE_SOURCE_DIR = /home/abdo/Desktop/sys
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build
+CMAKE_BINARY_DIR = /home/abdo/Desktop/sys/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/monitor.dir/clean
 CMakeFiles/monitor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target monitor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/abdo/Desktop/sys/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target monitor"
 .PHONY : CMakeFiles/monitor.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/monitor.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdo/Desktop/sys/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/monitor.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdo/Desktop/sys/build/CMakeFiles 0
 .PHONY : CMakeFiles/monitor.dir/rule
 
 # Convenience name for target.

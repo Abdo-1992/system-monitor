@@ -106,7 +106,7 @@ long LinuxParser::UpTime() {
         words>> withoutSus>> temp >> withSus ;
         stream.close();
     }
-  return (withSus);///sysconf(_SC_CLK_TCK)); 
+  return (withoutSus)/sysconf(_SC_CLK_TCK); 
 }
 
 // TODO: Read and return the number of jiffies for the system

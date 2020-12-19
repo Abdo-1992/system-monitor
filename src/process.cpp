@@ -163,7 +163,7 @@ float Process::FindCpuUtilizationValue(int pid){
         if(Hertz){
             totlaTime = utime + stime ;
             totlaTime = totlaTime + cutime + cstime ;
-            seconds = up_time - (1.0*starttime / Hertz) ;
+            return seconds = up_time - (1.0*starttime / Hertz) ;
             if(seconds){
                 result = (100.0 * ((totlaTime / Hertz) / seconds)) ;
                 return result ;

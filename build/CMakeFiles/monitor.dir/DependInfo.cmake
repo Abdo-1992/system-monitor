@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/format.cpp" "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles/monitor.dir/src/format.cpp.o"
-  "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/linux_parser.cpp" "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles/monitor.dir/src/linux_parser.cpp.o"
-  "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/main.cpp" "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles/monitor.dir/src/main.cpp.o"
-  "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/ncurses_display.cpp" "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles/monitor.dir/src/ncurses_display.cpp.o"
-  "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/process.cpp" "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles/monitor.dir/src/process.cpp.o"
-  "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/processor.cpp" "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles/monitor.dir/src/processor.cpp.o"
-  "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/system.cpp" "/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/build/CMakeFiles/monitor.dir/src/system.cpp.o"
+  "/home/abdo/Desktop/sys/src/format.cpp" "/home/abdo/Desktop/sys/build/CMakeFiles/monitor.dir/src/format.cpp.o"
+  "/home/abdo/Desktop/sys/src/linux_parser.cpp" "/home/abdo/Desktop/sys/build/CMakeFiles/monitor.dir/src/linux_parser.cpp.o"
+  "/home/abdo/Desktop/sys/src/main.cpp" "/home/abdo/Desktop/sys/build/CMakeFiles/monitor.dir/src/main.cpp.o"
+  "/home/abdo/Desktop/sys/src/ncurses_display.cpp" "/home/abdo/Desktop/sys/build/CMakeFiles/monitor.dir/src/ncurses_display.cpp.o"
+  "/home/abdo/Desktop/sys/src/process.cpp" "/home/abdo/Desktop/sys/build/CMakeFiles/monitor.dir/src/process.cpp.o"
+  "/home/abdo/Desktop/sys/src/processor.cpp" "/home/abdo/Desktop/sys/build/CMakeFiles/monitor.dir/src/processor.cpp.o"
+  "/home/abdo/Desktop/sys/src/system.cpp" "/home/abdo/Desktop/sys/build/CMakeFiles/monitor.dir/src/system.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
