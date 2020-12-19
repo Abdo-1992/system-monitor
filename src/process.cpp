@@ -97,7 +97,7 @@ long int Process::findUpTimeValue(int pid){
         stream.close();
 
     }
-    return up_time ;
+    return up_time ;// sysconf(_SC_CLK_TCK); ;
 }
 
 
@@ -163,9 +163,9 @@ float Process::FindCpuUtilizationValue(int pid){
         if(Hertz){
             totlaTime = utime + stime ;
             totlaTime = totlaTime + cutime + cstime ;
-            return seconds = up_time - (1.0*starttime / Hertz) ;
+            seconds = up_time - starttime ;
             if(seconds){
-                result = (100.0 * ((totlaTime / Hertz) / seconds)) ;
+                result = ( ((totlaTime / Hertz) / seconds)) ;
                 return result ;
             }
         }

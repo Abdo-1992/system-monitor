@@ -87,7 +87,7 @@ float LinuxParser::MemoryUtilization() {
         words >> temp >> free ;
         stream.close();
     }
-    memUtil = (float)(total-free)/total ;
+    memUtil = 1 - (float)(free)/total ;
 
   return memUtil; 
 }
@@ -106,7 +106,7 @@ long LinuxParser::UpTime() {
         words>> withoutSus>> temp >> withSus ;
         stream.close();
     }
-  return (withoutSus)/sysconf(_SC_CLK_TCK); 
+  return (withoutSus);//sysconf(_SC_CLK_TCK); 
 }
 
 // TODO: Read and return the number of jiffies for the system

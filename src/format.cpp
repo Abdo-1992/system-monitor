@@ -12,10 +12,10 @@ string Format::ElapsedTime(long seconds) {
     int hours {0} ;
     int min   {0} ; 
 
-    hours = seconds% 3600 ;
+    hours = seconds/ 3600 ;
     seconds %= 3600 ;
 
-    min = seconds % 60 ;
+    min = seconds / 60 ;
     seconds %= 60 ;
 
     return to_string(hours)+":"+to_string(min)+":"+to_string(seconds); 
