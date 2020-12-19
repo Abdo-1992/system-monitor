@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/linux_parser.h
+fstream
+-
+regex
+-
+string
+-
+
+../include/process.h
+string
+-
+
+/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/process.cpp
+unistd.h
+-
+cctype
+-
+sstream
+-
+string
+-
+vector
+-
+iostream
+-
+linux_parser.h
+/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/linux_parser.h
+process.h
+/home/abdo/workspace/nanodegree/cplusplus/htop/CppND-System-Monitor-Project-Updated/src/process.h
+
