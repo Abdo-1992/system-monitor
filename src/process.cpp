@@ -84,6 +84,7 @@ long int Process::findUpTimeValue(int pid){
     std::ifstream stream{path};
     std::istringstream words;
     long up_time = 0 ;
+    long system_time = LinuxParser::UpTime();
     if(stream){
         std::getline(stream,line);
         int i = 0 ;
@@ -93,11 +94,11 @@ long int Process::findUpTimeValue(int pid){
             words >> temp ;
         }
         words >> up_time ;
-    //    std::cout << up_time ;
+    
         stream.close();
 
     }
-    return up_time ;// sysconf(_SC_CLK_TCK); ;
+    return system_time - (up_time/ sysconf(_SC_CLK_TCK)) ;
 }
 
 
@@ -163,7 +164,7 @@ float Process::FindCpuUtilizationValue(int pid){
         if(Hertz){
             totlaTime = utime + stime ;
             totlaTime = totlaTime + cutime + cstime ;
-            seconds = up_time - starttime ;
+            seconds = up_time - (starttime/Hertz) ;
             if(seconds){
                 result = ( ((totlaTime / Hertz) / seconds)) ;
                 return result ;
